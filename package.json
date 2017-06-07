@@ -1,0 +1,28 @@
+{
+  "name": "mmi2-p2017-base",
+  "version": "1.0.0",
+  "description": "This is a basic repository to start the MMI2 front-end development course",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-sass": "^2.3.2",
+    "postcss-pxtorem": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcalou/mmi2-p2017-base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcalou/mmi2-p2017-base/issues"
+  },
+  "homepage": "https://github.com/bcalou/mmi2-p2017-base#readme"
+}
