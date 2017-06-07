@@ -1,0 +1,495 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700,400);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.snakeSegment {
+  background: url("../img/gifsnake.gif") no-repeat;
+  position: absolute;
+  width: 130px;
+  width: 8.125rem;
+  height: 270px;
+  height: 16.875rem;
+  z-index: 1; }
+
+#snakeShadowDemo {
+  height: 4000px;
+  height: 250rem;
+  position: static; }
+
+html {
+  font-size: 62.5%;
+  margin: 0; }
+
+body {
+  margin: 0;
+  font-style: sans-serif;
+  background: url("../img/bg2.png") no-repeat;
+  background-size: 100vw; }
+
+.bloc {
+  position: relative;
+  border-radius: 2px;
+  border-radius: 0.125rem; }
+
+.shadow {
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0.3125rem 0.3125rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19); }
+
+.firstsection {
+  margin-top: 50px;
+  margin-top: 3.125rem; }
+
+.bloc1 {
+  z-index: 0;
+  width: 65%;
+  height: 700px;
+  height: 43.75rem;
+  right: 0%;
+  margin-left: auto;
+  border: solid blue 5px;
+  border: solid blue 0.3125rem; }
+
+.bloc2 {
+  z-index: 2;
+  left: 0%;
+  top: -320px;
+  top: -20rem;
+  width: 40%;
+  height: 800px;
+  height: 50rem;
+  border: solid red 5px;
+  border: solid red 0.3125rem;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg); }
+
+.text1 {
+  z-index: 2;
+  position: relative;
+  right: 2%;
+  top: -780px;
+  top: -48.75rem;
+  margin-left: auto;
+  padding: 10px;
+  padding: 0.625rem;
+  width: 47%;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  padding-right: 90px;
+  padding-right: 5.625rem;
+  text-align: justify; }
+
+.twosection {
+  margin-top: -860px;
+  margin-top: -53.75rem;
+  overflow: hidden;
+  height: 39%; }
+
+.bloc3 {
+  z-index: 3;
+  width: 20%;
+  height: 510px;
+  height: 31.875rem;
+  right: -35px;
+  right: -2.1875rem;
+  margin-left: auto;
+  border: solid green 5px;
+  border: solid green 0.3125rem;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+  overflow: hidden;
+  margin-top: 30px;
+  margin-top: 1.875rem; }
+
+.bloc4 {
+  z-index: 3;
+  width: 25%;
+  height: 620px;
+  height: 38.75rem;
+  right: 15%;
+  margin-left: auto;
+  top: -190px;
+  top: -11.875rem;
+  border: solid blue 5px;
+  border: solid blue 0.3125rem;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg); }
+
+.bloc5 {
+  z-index: 2;
+  width: 25%;
+  height: 600px;
+  height: 37.5rem;
+  right: 38%;
+  margin-left: auto;
+  border: solid red 5px;
+  border: solid red 0.3125rem;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  top: -950px;
+  top: -59.375rem; }
+
+.bloc6 {
+  z-index: 3;
+  width: 30%;
+  height: 700px;
+  height: 43.75rem;
+  left: 12%;
+  border: solid purple 5px;
+  border: solid purple 0.3125rem;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  top: -1010px;
+  top: -63.125rem; }
+
+.bloc6bg {
+  z-index: 0;
+  width: 35%;
+  height: 850px;
+  height: 53.125rem;
+  left: 3%;
+  border: solid #ff6600 5px;
+  border: solid #ff6600 0.3125rem;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+  top: -2460px;
+  top: -153.75rem; }
+  .bloc6bg p {
+    margin: 20%;
+    font-size: 4.4rem;
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg); }
+
+.text2 {
+  z-index: 2;
+  position: relative;
+  right: 7%;
+  top: -1350px;
+  top: -84.375rem;
+  margin-left: auto;
+  padding: 10px;
+  padding: 0.625rem;
+  width: 45%;
+  font-size: 4.4rem; }
+
+.treesection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.text3 {
+  z-index: 2;
+  width: 40%;
+  padding: 40px 80px 40px 110px;
+  padding: 2.5rem 5rem 2.5rem 6.875rem;
+  font-size: 2rem;
+  text-align: justify; }
+
+.imagesectiontree {
+  z-index: 3;
+  width: 90%;
+  height: 300px;
+  height: 18.75rem;
+  border: solid red 5px;
+  border: solid red 0.3125rem;
+  margin: 20px auto;
+  margin: 1.25rem auto; }
+
+.bloc7 {
+  z-index: 3;
+  width: 60%;
+  height: 700px;
+  height: 43.75rem;
+  border: solid red 5px;
+  border: solid red 0.3125rem;
+  margin-top: -40px;
+  margin-top: -2.5rem; }
+
+/********************* text shadow parallax *********************/
+html, body {
+  height: 100%;
+  padding: 0; }
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%; }
+
+body {
+  background-color: #EEEEEF;
+  font-family: sans-serif, Montserrat, Helvetica, Times, serif;
+  font-size: 1rem;
+  line-height: 1.45;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "liga", "kern"; }
+
+a {
+  color: #555;
+  text-decoration: none; }
+
+p {
+  margin-bottom: 1.3em; }
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.45rem; }
+
+h1 {
+  margin-top: 0;
+  font-size: 6.853em;
+  /* Hello stylesheet! */
+  width: 90vw; }
+
+.bold {
+  display: inline-block;
+  font-weight: normal;
+  color: blue;
+  will-change: transform; }
+
+.fit-top-right-bottom-left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%); }
+
+/*
+section{
+
+
+  h1 {
+    margin-bottom: 15px;
+    font-style: bold;
+    font-size: 45px;
+
+    @media (max-width: 590px) {
+    font-size: 30px;
+    }
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-style: bold;
+    font-size: 30px;
+
+    @media (max-width: 590px) {
+    font-size: 20px;
+    }
+}
+
+}
+
+
+
+body {
+  text-align:center;
+  background-color: white;
+  font-family: sans-serif;
+  line-height:25px;
+  font-size: 20px;
+  @media (max-width: 590px) {
+    font-size: 16px;
+    }
+}
+
+///////////////////// Contact ////////////////////////////
+/*.contact {
+ background: url("../img/contact.png") center no-repeat;
+background-size:cover;
+color:white;
+padding: 50px 0px;
+
+
+ &__intro {
+  margin-bottom: 30px;
+    }
+
+ &__formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:80%;
+  margin: 0 auto;
+
+     input {
+      width:45%;
+      margin-bottom:10px;
+      border-radius:3px;
+      height:30px;
+      border:none;
+
+         &:nth-child(3){
+         width: 100%;
+         }
+     }
+
+     a {
+      text-decoration: none;
+      width:100%;
+      color:white;
+    }
+  }
+}
+
+
+
+///////////////////// Horaire ////////////////////////////
+.horaire {
+  background: purple;
+  padding-bottom: 30px;
+}
+
+///////////////////// Tarif commun ////////////////////////////
+
+.tarifs {
+  padding: 100px 0px;
+}
+
+.tarifs__forfait{
+margin: 15px 0px;
+}
+
+.tarifs__groupe{
+   display: flex;
+   flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom:20px;
+
+  .tarifs__groupeListe{
+    background-color: rgba(0, 0, 0, 0.7);
+    color : white;
+    margin: 10px;
+    padding:10px;
+    border-radius: 3px;
+
+    .tarifs__Solo{
+      display: flex;
+   flex-wrap: no-wrap;
+
+        p:first-child {
+          width:350px;
+          text-align: left;
+
+          @media (max-width: 590px) {
+          width:270px;
+          }
+
+        }
+    }
+  }
+}
+
+///////////////////// Tarif feminin ////////////////////////////
+.tarifs_femme {
+background: url("../img/femme.jpg") center no-repeat fixed;
+background-size:cover;
+}
+
+
+///////////////////// Tarif homme ////////////////////////////
+
+.tarifs_homme {
+background: url("../img/homme.jpg") center no-repeat fixed;
+background-size:cover;
+color : white;
+}
+
+
+
+
+
+
+.diagonal-text {
+  color: white;
+  padding: 35px 0 15px;
+  transform:  rotate(-2deg) skew(-2deg);
+  -webkit-transform:  rotate(-2deg) skew(-2deg);
+  -moz-transform: rotate(-2deg) skew(-2deg);
+  -o-transform:  rotate(-2deg) skew(-2deg);
+  -ms-transform:  rotate(-2deg) skew(-2deg);
+  margin-bottom: -5px;
+  padding-bottom: 60px;
+}
+
+
+.diagonal {
+  width: 100.1%;
+  transform:  rotate(2deg) skew(2deg);
+  -webkit-transform: rotate(2deg) skew(2deg);
+  -moz-transform: rotate(2deg) skew(2deg);
+  -o-transform:  rotate(2deg) skew(2deg);
+  -ms-transform:  rotate(2deg) skew(2deg);
+  margin: -30px 0 -30px -1px;
+  padding-top: 30px ;
+
+}
+
+.diagonal__purple {
+ background: #7A217D center ;
+
+}
+
+.diagonal__grey {
+background: #575756 center ;
+
+}
+.beforemap {
+  background: #9d1e17 none repeat scroll 0 0;
+}
+.map {
+    background: #9d1e17 none repeat scroll 0 0;
+    content: "";
+    height: 180px;
+    left: -62%;
+    top: -26%;
+    transform: rotate(18deg);
+    width: 550px;
+    position: absolute;
+
+}*/
