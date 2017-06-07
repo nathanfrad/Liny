@@ -1,0 +1,164 @@
+.snakeSegment {
+    background: url('../img/gifsnake.gif') no-repeat;
+    position: absolute;
+    top: 100px;
+    width: 90px;
+    height: 190px;
+    z-index: 0;
+}
+
+#snakeShadowDemo {
+    height: 2000px;
+    position: static;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-style: sans-serif;
+     background: url('../img/bg.jpg') no-repeat;
+}
+
+.bloc {
+    position: relative;
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+}
+
+.bloc1 {
+    z-index: 2;
+    width: 70%;
+    height: 300px;
+    right: 0px;
+    margin-left: auto;
+    top: 50px;
+    background-color: green;
+}
+
+.bloc2 {
+    z-index: 1;
+    left: 10%;
+    top: 10px;
+    width: 30%;
+    height: 400px;
+    background-color: blue;
+}
+
+.text {
+    z-index: 2;
+    position: relative;
+    right: 20px;
+    top: -300px;
+    margin-left: auto;
+    width: 55%;
+    font-size: 2.4rem;
+}
+
+.bloc3 {
+    z-index: 3;
+    width: 20%;
+    height: 250px;
+    right: 10px;
+    margin-left: auto;
+    top: -150px;
+    background-color: green;
+}
+
+.bloc4 {
+    z-index: 2;
+    width: 25%;
+    height: 350px;
+    right: 15%;
+    margin-left: auto;
+    top: -280px;
+    background-color: blue;
+}
+
+.bloc5 {
+    z-index: 1;
+    width: 25%;
+    height: 300px;
+    right: 38%;
+    margin-left: auto;
+    top: -660px;
+    background-color: red;
+}
+
+.bloc6 {
+    z-index: 1;
+    width: 25%;
+    height: 500px;
+    left: 5%;
+    top: -860px;
+    background-color: navy;
+}
+
+
+/********************* text shadow parallax *********************/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700,400);
+html, body {
+    height: 100%;
+    padding: 0;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #EEEEEF;
+    font-family: sans-serif, Montserrat, Helvetica, Times, serif;
+    font-size: 1rem;
+    line-height: 1.45;
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "liga", "kern";
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+    margin: 1.414em 0 0.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.45rem;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 6.853em;
+    /* Hello stylesheet! */
+    width: 90vw;
+}
+
+section {
+
+}
+
+.bold {
+    display: inline-block;
+    font-weight: normal;
+    color: blue;
+    will-change: transform;
+    // transition: .2s;
+}
+
+.fit-top-right-bottom-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

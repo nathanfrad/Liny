@@ -1,9 +1,6 @@
 @import 'vendors/reset';
-
 @import 'global/layout';
 
-@import 'blocs/header';
-@import 'blocs/footer';
 
 ///////////////////// media ////////////////////////////
 $mobile: "(max-width: 590px)";
@@ -13,6 +10,229 @@ $desktop: "(min-width: 1024px)";
 
 ///////////////////// balise ////////////////////////////
 
+.snakeSegment {
+    background: url('../img/gifsnake.gif') no-repeat;
+    position: absolute;
+    width: 130px;
+    height: 270px;
+    z-index: 1;
+}
+
+#snakeShadowDemo {
+    height: 4000px;
+    position: static;
+}
+
+html {
+    font-size: 62.5%;
+    margin:0;
+
+}
+
+body {
+    margin: 0;
+    font-style: sans-serif;
+     background: url('../img/bg2.png') no-repeat;
+     background-size: 100vw;
+}
+
+.bloc {
+    position: relative;
+    border-radius: 2px;
+}
+
+.shadow{
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+
+.firstsection {
+  margin-top: 50px;
+}
+.bloc1 {
+    z-index: 0;
+    width: 65%;
+    height: 700px;
+    right: 0%;
+    margin-left: auto;
+    border: solid blue 5px;
+}
+
+.bloc2 {
+    z-index: 2;
+    left: 0%;
+    top: -320px;
+    width: 40%;
+    height: 800px;
+   border: solid red 5px;
+   transform: rotate(-4deg);
+}
+
+.text1 {
+    z-index: 2;
+    position: relative;
+    right: 2%;
+    top: -780px;
+    margin-left: auto;
+    padding: 10px;
+    width: 50%;
+    font-size: 2.4rem;
+    line-height : 1.1;
+}
+.twosection {
+  margin-top:-860px;
+  overflow: hidden;
+}
+
+.bloc3 {
+    z-index: 3;
+    width: 20%;
+    height: 510px;
+    right: -35px;
+    margin-left: auto;
+    border: solid green 5px;
+    transform: rotate(7deg);
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.bloc4 {
+    z-index: 3;
+    width: 25%;
+    height: 620px;
+    right: 15%;
+    margin-left: auto;
+    top:-190px;
+    border: solid blue 5px;
+    transform: rotate(2deg);
+}
+
+.bloc5 {
+    z-index: 2;
+    width: 25%;
+    height: 600px;
+    right: 38%;
+    margin-left: auto;
+    border: solid red 5px;
+    transform: rotate(-3deg);
+    top:-950px;
+}
+
+.bloc6 {
+    z-index: 3;
+    width: 30%;
+    height: 700px;
+    left: 12%;
+     border: solid purple 5px;
+    transform: rotate(-3deg);
+    top:-1010px;
+}
+
+.text2 {
+    z-index: 2;
+    position: relative;
+    right: 7%;
+    top: -1350px;
+    margin-left: auto;
+    padding: 10px;
+    width: 45%;
+    font-size: 4.4rem;
+
+}
+
+.treesection{
+  top:-1010px;
+
+}
+
+.bloc7 {
+    z-index: 3;
+    width: 50%;
+    height: 700px;
+    right: 0%;
+    margin-left: auto;
+    border: solid red 5px;
+
+}
+
+.text3 {
+    z-index: 2;
+    position: relative;
+    right: 7%;
+    top: -1350px;
+    margin-left: auto;
+    padding: 10px;
+    width: 45%;
+    font-size: 4.4rem;
+
+}
+
+/********************* text shadow parallax *********************/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700,400);
+html, body {
+    height: 100%;
+    padding: 0;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #EEEEEF;
+    font-family: sans-serif, Montserrat, Helvetica, Times, serif;
+    font-size: 1rem;
+    line-height: 1.45;
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "liga", "kern";
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+    margin: 1.414em 0 0.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.45rem;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 6.853em;
+    /* Hello stylesheet! */
+    width: 90vw;
+}
+
+section {
+
+}
+
+.bold {
+    display: inline-block;
+    font-weight: normal;
+    color: blue;
+    will-change: transform;
+    // transition: .2s;
+}
+
+.fit-top-right-bottom-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*
 section{
 
 
@@ -90,7 +310,7 @@ padding: 50px 0px;
   }
 }
 
-*/
+
 
 ///////////////////// Horaire ////////////////////////////
 .horaire {
@@ -205,6 +425,6 @@ background: #575756 center ;
     width: 550px;
     position: absolute;
 
-}
+}*/
 
 
