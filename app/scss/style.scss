@@ -74,13 +74,18 @@ body {
     top: -780px;
     margin-left: auto;
     padding: 10px;
-    width: 50%;
+    width: 47%;
     font-size: 2.4rem;
     line-height : 1.1;
+    padding-right: 90px;
+    text-align: justify;
 }
 .twosection {
-  margin-top:-860px;
+  margin-top: -860px;
   overflow: hidden;
+  //height: 1550px;
+  height:39%;
+
 }
 
 .bloc3 {
@@ -126,6 +131,23 @@ body {
     transform: rotate(-3deg);
     top:-1010px;
 }
+.bloc6bg {
+    z-index: 0;
+    width: 35%;
+    height: 850px;
+    left: 3%;
+     border: solid #ff6600 5px;
+     //background-color: #FDFA05 ;
+    transform: rotate(7deg);
+    top:-2460px;
+
+    p {
+     margin: 20%;
+    font-size: 4.4rem;
+    transform: rotate(-8deg);
+
+    }
+}
 
 .text2 {
     z-index: 2;
@@ -140,31 +162,34 @@ body {
 }
 
 .treesection{
-  top:-1010px;
-
+  display:flex;
 }
-
-.bloc7 {
-    z-index: 3;
-    width: 50%;
-    height: 700px;
-    right: 0%;
-    margin-left: auto;
-    border: solid red 5px;
-
-}
-
 .text3 {
     z-index: 2;
-    position: relative;
-    right: 7%;
-    top: -1350px;
-    margin-left: auto;
-    padding: 10px;
-    width: 45%;
-    font-size: 4.4rem;
+    width: 40%;
+    padding: 40px 80px 40px 110px;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.imagesectiontree {
+  z-index: 3;
+    width: 90%;
+    height: 300px;
+    border: solid red 5px;
+    margin: 20px auto;
 
 }
+.bloc7 {
+    z-index: 3;
+    width: 60%;
+    height: 700px;
+    border: solid red 5px;
+    margin-top:-40px;
+
+}
+
+
 
 /********************* text shadow parallax *********************/
 
