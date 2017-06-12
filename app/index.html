@@ -18,7 +18,7 @@
             $(function () {
              var $window = $(window);
 
-             $window.scroll(function () {
+            // $window.scroll(function () {
                  if ($window.height() + $window.scrollTop()
                                 < $(document).height()) {
 
@@ -41,55 +41,67 @@
     </head>
     <body id="snakeShadowDemo">
         <section class="firstsection">
-            <div class="bloc bloc1">
-            <img src="../img/logo.png"/>
+            <div class="colonne1">
+                <div class="bloc bloc1  ">
+                    <video  class=" shadow " autoplay="" loop="" src="img/stopmotion.mp4">
+                    </video>
+                </div>
             </div>
-            <div class="bloc bloc2 shadow">
-                <video "="" autoplay="" loop="" src="/img/stopmotion.mp4">
-                </video>
-            </div>
-            <div class="text1">
-                <p>
-                    <strong>
-                        Liny est un petit personnage
-                    </strong>
-                    au simple tracé linéaire noir.  Il transcrit avec humour et ironie des traits de caractères, des émotions ou des sentiments. Il est né de l’envie de sa créatrice d’illustrer des choses complexes de la manière la plus simple possible.
-                    <br>
-                        Liny  peut se décliner en une collection d’objets divers, art de la table, linge de maison, objets décoratifs...
-                    </br>
-                </p>
+            <div class="colonne2">
+                <div class="bloc bloc2">
+                    <img  src="img/logo.png"/>
+                </div>
+                <div class="text1">
+                    <p>
+                        <strong>
+                            Liny est un petit personnage
+                        </strong>
+                        au simple tracé linéaire noir.  Il transcrit avec humour et ironie des traits de caractères, des émotions ou des sentiments. Il est né de l’envie de sa créatrice d’illustrer des choses complexes de la manière la plus simple possible.
+                        <br>
+                            Liny  peut se décliner en une collection d’objets divers, art de la table, linge de maison, objets décoratifs...
+                        </br>
+                    </p>
+                </div>
             </div>
         </section>
         <section class="twosection">
-            <div class="bloc bloc3 shadow">
-                <img src="../img/block3.svg"/>
-
+            <div class="colonne1">
+                <div class="bloc bloc3bg shadow">
+                    <p>
+                        «Simplement
+                        <br>
+                            compliqué !»
+                        </br>
+                    </p>
+                </div>
+                <div class="bloc bloc3 ">
+                    <img  class="shadow" src="img/block6.svg"/>
+                </div>
             </div>
-            <div class="bloc bloc4 shadow">
-                <img src="../img/block4.svg"/>
-
+            <div class="colonne2">
+                <div class="bloc bloc4 ">
+                    <img  class="shadow" src="img/block5.svg"/>
+                </div>
             </div>
-            <div class="bloc bloc5 shadow">
-            <img src="../img/block5.svg"/>
-
+            <div class="colonne3">
+                <div class="bloc bloc5 ">
+                    <img   class="shadow" src="img/block4.svg"/>
+                </div>
             </div>
-            <div class="bloc bloc6 shadow">
-            <img src="../img/block6.svg"/>
+            <div class="colonne4">
+                <div class="bloc bloc6">
+                    <img class="shadow" src="img/block3.svg"/>
+                </div>
             </div>
+        </section>
+        <section class="slogan" >
             <div class="text2">
                 <p>
                     «liny, une démarche graphique au service de l’objet»
                 </p>
             </div>
-            <div class="bloc bloc6bg shadow">
-                <p>
-                    «Simplement
-                    <br>
-                        compliqué !»
-                    </br>
-                </p>
-            </div>
         </section>
+        <!--
         <section class="treesection">
             <div class="text3">
                 <p>
@@ -107,6 +119,6 @@
             </section>
             <section class="footer2">
             </section>
-        </footer>
+        </footer>  -->
     </body>
 </html>

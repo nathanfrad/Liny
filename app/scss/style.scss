@@ -3,9 +3,11 @@
 
 
 ///////////////////// media ////////////////////////////
-$mobile: "(max-width: 590px)";
-$tablet: "(min-width: 590px) and (max-width: 1024px)";
-$desktop: "(min-width: 1024px)";
+$mobile: "(max-width: 900px)";
+$tablet: "(min-width: 901px) and (max-width: 1024px)";
+//$desktop: "(min-width: 1129px)";
+$desktop: " screen and (min-width: 901px)";
+
 
 
 ///////////////////// balise ////////////////////////////
@@ -29,8 +31,9 @@ src: url('../font/Menlo-Regular.woff') format('woff');
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 100%;
     margin:0;
+
 
 
 }
@@ -38,154 +41,203 @@ html {
 body {
     margin: 0;
     font-style: sans-serif;
-     //background: url('../img/bg2.png') no-repeat;
+   // background: url('../img/bg2.png') no-repeat;
+    //background-size: 100%;
 
 
 }
+
+
 
 .bloc {
     position: relative;
-    border-radius: 2px;
 }
 
 .shadow{
-  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border-radius: 2px;
    }
 
+
+
 .firstsection {
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 0px;
   font-family: 'Menlo Regular', Helvetica, sans-serif;
   //height:1100px;
   display: block;
+  display:flex;
+  flex-wrap: wrap;
+
+  .colonne1 {
+  width: 37%;
+  display: inline-block;
+  @media #{$mobile} {
+   min-width: 355px;
+   }
+
+  }
+  .colonne2 {
+  width: 63%;
+  display: inline-block;
+  @media #{$mobile} {
+   min-width: 355px;
+   }
+  }
 
 }
+
+
 .bloc1 {
-    z-index: 2;
-    width: 65%;
-    //height: 700px;
-    right: 0%;
-    margin-left: auto;
-    //border: solid blue 5px;
-
-    background-position: 100%;
-}
-
-.bloc2 {
-    z-index: 2;
-    left: 0%;
-    top: -320px;
-    width: 39%;
+   z-index: 3;
    //border: solid red 5px;
    transform: rotate(-4deg);
    overflow: hidden;
 
-   img {
-    width:100%;
+
+   video {
+    width: 90%;
+    margin: 20px 20px;
+   }
+
+   @media #{$desktop} {
+   margin-top: 40%;
+   width: 120%;
+   height: 100%;
    }
 
 
+
+}
+
+.bloc2 {
+    z-index: 2;
+    border: solid blue 5px;
+    overflow: hidden;
+   img {
+    width:100%;
+   }
 }
 
 .text1 {
     z-index: 2;
     position: relative;
-    right: 2%;
-    top: -780px;
-    margin-left: auto;
-    padding: 10px;
-    width: 47%;
-    font-size: 2.2rem;
+    padding: 5% 10%;
+    font-size: 1.5vw;
     line-height : 1.5;
-    padding-right: 90px;
     text-align: justify;
     font-family:  Helvetica, sans-serif;
+    @media #{$mobile} {
+    font-size: 3vw;
+
+   }
 
 }
 .twosection {
-  margin-top: 0px;
   overflow: hidden;
-  //height: 1550px;
+  margin-top: -130px;
+  padding-bottom: 50px;
+  padding-top:50px;
   font-family: 'Menlo Regular', Helvetica, sans-serif;
-  display: block;
+ // display: block;
+  display:flex;
+  flex-wrap: wrap;
+
+  .colonne1 {
+  width: 37%;
+  @media #{$mobile} {
+   min-width: 355px;
+   }
+  }
+  .colonne2 {
+  width: 20%;
+  @media #{$mobile} {
+   min-width: 355px;
+   }
+  }
+  .colonne3 {
+  width: 23%;
+  @media #{$mobile} {
+   min-width: 355px;
+   }
+  }
+  .colonne4 {
+  width: 20%;
+  @media #{$mobile} {
+   min-width: 355px;
+   }
+  }
 
 }
+
 
 .bloc3 {
-    z-index: 3;
-    width: 21%;
-    //height: 496px;
-    right: -35px;
-    margin-left: auto;
-   // border: solid green 5px;
-    transform: rotate(7deg);
-    overflow: hidden;
-    margin-top: 30px;
+  z-index: 4;
+  transform: rotate(-3deg);
+  width: 100%;
 
+  @media #{$desktop} {
+   margin-top: -50%;
+     margin-left: 30%;
+     width: 80%;
 }
 
-.bloc4 {
-    z-index: 3;
-    width: 25%;
-   // height: 617px;
-    right: 15%;
-    margin-left: auto;
-    margin-top: -190px;
-    //border: solid blue 5px;
-    transform: rotate(2deg);
 
 
 }
-
-.bloc5 {
-    z-index: 2;
-    width: 27%;
-    //height: 599px;
-    right: 38%;
-    margin-left: auto;
-   // border: solid red 5px;
-    transform: rotate(-3deg);
-    top:-950px;
-
-}
-
-.bloc6 {
-    z-index: 3;
-    width: 30%;
-   // height: 732px;
-    left: 12%;
-    //border: solid purple 5px;
-    transform: rotate(-3deg);
-    top:-1010px;
-}
-.bloc6bg {
+.bloc3bg {
     z-index: 0;
-    width: 35%;
-    height: 850px;
-    left: 3%;
-    //border: solid #ff6600 5px;
     background-color: #FDFA05 ;
     transform: rotate(7deg);
-    top:-2380px;
+    margin-top: 30%;
+    height: 520px;
+    width: 93%;
+    margin-left:10%;
     text-transform: uppercase;
 
     p {
-     padding-left: 100px;
-     padding-top: 160px;
-    font-size: 5rem;
-    transform: rotate(-5deg);
+    font-size: 2.8rem;
+    transform: rotate(-6deg);
+    padding-top: 20%;
+    margin-left: 20%;
 
     }
 }
 
+.bloc4 {
+    z-index: 2;
+    margin-top: 35%;
+    transform: rotate(-3deg);
+    width: 120%;
+
+}
+
+.bloc5 {
+    z-index: 3;
+    transform: rotate(2deg);
+    margin-top: 75%;
+    width: 115%;
+
+}
+
+.bloc6 {
+    z-index: 4;
+    transform: rotate(7deg);
+    width: 120%;
+
+}
+
+.slogan {
+  margin-top: -12%;
+}
 .text2 {
     z-index: 2;
     position: relative;
-    right: 7%;
-    top: -1350px;
+    padding: 0% 5%;
+    width: 50%;
     margin-left: auto;
-    padding: 10px;
-    width: 45%;
-    font-size: 4.4rem;
+    right:0px;
+    font-size: 2.5vw;
     font-family: 'Menlo Regular', Helvetica, sans-serif;
     text-transform: uppercase;
 
