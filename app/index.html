@@ -18,22 +18,22 @@
             $(function () {
              var $window = $(window);
 
-            // $window.scroll(function () {
-                 if ($window.height() + $window.scrollTop()
-                                < $(document).height()) {
+             $window.scroll(function () {
+                 if ($window.height() + $window.scrollTop() < $(document).height()) {
+                 // alert($(document).height())
 
 
-               // document.getElementById("footer1").classList.add("transparent");
-                //document.getElementById("footer1").classList.remove("gif");
+              // document.getElementById("footer1").classList.add("transparent");
+               // document.getElementById("footer1").classList.remove("gif");
                 //document.getElementById("footer1").innerHTML = "";
                  }
-                 else if ($window.scrollTop()
-                                > $(document).height()-3000) {
-                    alert($(document).height())
+                 else if ($window.height() + $window.scrollTop() === $(document).height())-3000 {
 
-                //document.getElementById("footer1").classList.remove("transparent");
-              // document.getElementById("footer1").classList.add("gif");
-                //document.getElementById("footer1").innerHTML = "<img src=\"img/footer-anim-gif.gif\"/>";
+                   alert($(document).height())
+
+               // document.getElementById("footer1").classList.remove("transparent");
+               // document.getElementById("footer1").classList.add("gif");
+              //document.getElementById("footer1").innerHTML = "<img src=\"img/footer-anim-gif.gif\"/>";
                  }
              });
          });
@@ -113,7 +113,6 @@
                 bloc 3
             </div>
         </section>
-
         <section class="foursection">
             <div class="colonne1">
                 <div class="bloc bloc8 ">
@@ -131,10 +130,9 @@
                 </div>
             </div>
             <div class="colonne4">
-                  <div class="texte4 ">
+                <div class="texte4 ">
                     <p>
                         «Simplement compliqué !»csdfcs czd zszdcscz cz cz q  zecez cedc sd  cse s  czd zszdcscz cz cz q  zecez cedc sd  cse czd zszdcscz cz cz q  zecez cedc sd  cse czd zszdcscz cz cz q  zecez cedc sd  cse
-
                     </p>
                 </div>
                 <div class="bloc bloc11">
@@ -142,12 +140,18 @@
                 </div>
             </div>
         </section>
-        <!--
+        <section class="slogan2">
+            <div class="text5">
+                <p>
+                    «liny, une démarche graphique au service de l’objet»
+                </p>
+            </div>
+        </section>
         <footer>
             <section id="footer1">
             </section>
             <section class="footer2">
             </section>
-        </footer>  -->
+        </footer>
     </body>
 </html>
