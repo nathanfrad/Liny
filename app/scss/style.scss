@@ -41,8 +41,8 @@ html {
 body {
     margin: 0;
     font-style: sans-serif;
-   // background: url('../img/bg2.png') no-repeat;
-    //background-size: 100%;
+   //background: url('../img/bg2.png') no-repeat;
+   // background-size: 100%;
 
 
 }
@@ -112,7 +112,7 @@ body {
 
 .bloc2 {
     z-index: 2;
-    border: solid blue 5px;
+   //border: solid blue 5px;
     overflow: hidden;
    img {
     width:100%;
@@ -171,108 +171,254 @@ body {
 }
 
 
-.bloc3 {
-  z-index: 4;
-  transform: rotate(-3deg);
-  width: 100%;
-
-  @media #{$desktop} {
-   margin-top: -50%;
-     margin-left: 30%;
-     width: 80%;
-}
-
-
-
-}
 .bloc3bg {
     z-index: 0;
     background-color: #FDFA05 ;
     transform: rotate(7deg);
     margin-top: 30%;
-    height: 520px;
+   // height: 80%;
     width: 93%;
     margin-left:10%;
     text-transform: uppercase;
 
     p {
-    font-size: 2.8rem;
+    font-size: 3.3vw;
     transform: rotate(-6deg);
     padding-top: 20%;
+    padding-bottom: 65%;
     margin-left: 20%;
+
+       @media #{$mobile} {
+      font-size: 8vw;
+      }
 
     }
 }
 
+
+.bloc3 {
+  z-index: 4;
+  transform: rotate(-3deg);
+  width: 100%;
+  margin-top: -50%;
+
+  @media #{$desktop} {
+
+     margin-left: 30%;
+     width: 80%;
+   }
+
+}
+
 .bloc4 {
     z-index: 2;
-    margin-top: 35%;
     transform: rotate(-3deg);
-    width: 120%;
+    @media #{$desktop} {
+     margin-top: 35%;
+     width: 120%;
+   }
 
 }
 
 .bloc5 {
     z-index: 3;
     transform: rotate(2deg);
-    margin-top: 75%;
+
+
+    @media #{$desktop} {
+     margin-top: 75%;
     width: 115%;
+   }
 
 }
 
 .bloc6 {
     z-index: 4;
     transform: rotate(7deg);
+
+
+    @media #{$desktop} {
     width: 120%;
+   }
 
 }
 
 .slogan {
-  margin-top: -12%;
+  @media #{$desktop} {
+    margin-top: -12%;
+    margin-bottom: 7%;
+   }
 }
 .text2 {
     z-index: 2;
     position: relative;
     padding: 0% 5%;
-    width: 50%;
-    margin-left: auto;
-    right:0px;
     font-size: 2.5vw;
     font-family: 'Menlo Regular', Helvetica, sans-serif;
     text-transform: uppercase;
+
+    @media #{$desktop} {
+    width: 50%;
+    margin-left: auto;
+    right:0px;
+   }
+
+    @media #{$mobile} {
+    font-size: 6.5vw;
+   }
 
 }
 
 .treesection{
   display:flex;
-   font-family: 'Menlo Regular', Helvetica, sans-serif;
-  // height: 2000px;
+  font-family: Helvetica, sans-serif;
+  display:flex;
+  flex-wrap: wrap;
+}
+.demarche {
+  width: 35%;
+  padding: 0% 5%;
+  @media #{$mobile} {
+    min-width: 350px;
+   }
+
 }
 .text3 {
     z-index: 2;
-    width: 40%;
-    padding: 40px 80px 40px 110px;
-    font-size: 2rem;
+    padding: 5% 0%;
+    font-size: 1.5vw;
     text-align: justify;
-    font-family: 'Menlo Regular', Helvetica, sans-serif;
+
+
+    @media #{$mobile} {
+    font-size: 4.5vw;
+   }
 }
 
 .imagesectiontree {
-  z-index: 3;
+    z-index: 3;
     width: 90%;
-    height: 300px;
+    height: 40%;
     border: solid red 5px;
     margin: 20px auto;
 
 }
 .bloc7 {
     z-index: 3;
-    width: 60%;
-    height: 700px;
+    height: 300px;
     border: solid red 5px;
-    margin-top:-40px;
+
+    @media #{$desktop} {
+    width: 65%;
+    margin: 50px 10px;
+   }
+
+    @media #{$mobile} {
+    min-width: 350px;
+   }
 
 }
+
+
+.foursection {
+  overflow: hidden;
+  padding-bottom: 15px;
+  padding-top:15px;
+  font-family:  Helvetica, sans-serif;
+ // display: block;
+  display:flex;
+  flex-wrap: wrap;
+  font-style: justify;
+
+  .colonne1 {
+  width: 15%;
+  @media #{$mobile} {
+   min-width: 355px;
+   }
+  }
+  .colonne2 {
+  width: 25%;
+  @media #{$mobile} {
+   min-width: 355px;
+   }
+  }
+  .colonne3 {
+  width: 25%;
+  @media #{$mobile} {
+   min-width: 355px;
+   }
+  }
+  .colonne4 {
+  width: 35%;
+  @media #{$mobile} {
+   min-width: 355px;
+   }
+  }
+
+}
+
+.bloc8 {
+  z-index: 1;
+  transform: rotate(-3deg);
+  width: 100%;
+
+  @media #{$desktop} {
+
+     margin-left: 25%;
+     width: 90%;
+   }
+
+}
+
+.bloc9 {
+    z-index: 2;
+    transform: rotate(3deg);
+    @media #{$desktop} {
+     margin-top: 30%;
+     width: 120%;
+   }
+
+}
+
+.bloc10 {
+    z-index: 3;
+    transform: rotate(-3deg);
+
+
+    @media #{$desktop} {
+     margin-top: 5%;
+     width: 100%;
+   }
+
+}
+
+.bloc11 {
+    z-index: 4;
+    transform: rotate(5deg);
+
+
+    @media #{$desktop} {
+    width: 75%;
+    margin-top: 7%;
+    margin-left:- 20%;
+   }
+
+}
+.texte4 {
+  padding: 10% 10%;
+
+ @media #{$desktop} {
+    width: 90%;
+
+    font-size: 2vw;
+
+   }
+
+
+}
+
+
+
 
 footer {
 

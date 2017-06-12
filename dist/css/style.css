@@ -124,8 +124,6 @@ body {
 
 .bloc2 {
   z-index: 2;
-  border: solid blue 5px;
-  border: solid blue 0.3125rem;
   overflow: hidden; }
   .bloc2 img {
     width: 100%; }
@@ -181,90 +179,115 @@ body {
         min-width: 355px;
         min-width: 22.1875rem; } }
 
-.bloc3 {
-  z-index: 4;
-  -webkit-transform: rotate(-3deg);
-          transform: rotate(-3deg);
-  width: 100%; }
-  @media screen and (min-width: 901px) {
-    .bloc3 {
-      margin-top: -50%;
-      margin-left: 30%;
-      width: 80%; } }
-
 .bloc3bg {
   z-index: 0;
   background-color: #FDFA05;
   -webkit-transform: rotate(7deg);
           transform: rotate(7deg);
   margin-top: 30%;
-  height: 520px;
-  height: 32.5rem;
   width: 93%;
   margin-left: 10%;
   text-transform: uppercase; }
   .bloc3bg p {
-    font-size: 2.8rem;
+    font-size: 3.3vw;
     -webkit-transform: rotate(-6deg);
             transform: rotate(-6deg);
     padding-top: 20%;
+    padding-bottom: 65%;
     margin-left: 20%; }
+    @media (max-width: 900px) {
+      .bloc3bg p {
+        font-size: 8vw; } }
+
+.bloc3 {
+  z-index: 4;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  width: 100%;
+  margin-top: -50%; }
+  @media screen and (min-width: 901px) {
+    .bloc3 {
+      margin-left: 30%;
+      width: 80%; } }
 
 .bloc4 {
   z-index: 2;
-  margin-top: 35%;
   -webkit-transform: rotate(-3deg);
-          transform: rotate(-3deg);
-  width: 120%; }
+          transform: rotate(-3deg); }
+  @media screen and (min-width: 901px) {
+    .bloc4 {
+      margin-top: 35%;
+      width: 120%; } }
 
 .bloc5 {
   z-index: 3;
   -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
-  margin-top: 75%;
-  width: 115%; }
+          transform: rotate(2deg); }
+  @media screen and (min-width: 901px) {
+    .bloc5 {
+      margin-top: 75%;
+      width: 115%; } }
 
 .bloc6 {
   z-index: 4;
   -webkit-transform: rotate(7deg);
-          transform: rotate(7deg);
-  width: 120%; }
+          transform: rotate(7deg); }
+  @media screen and (min-width: 901px) {
+    .bloc6 {
+      width: 120%; } }
 
-.slogan {
-  margin-top: -12%; }
+@media screen and (min-width: 901px) {
+  .slogan {
+    margin-top: -12%;
+    margin-bottom: 7%; } }
 
 .text2 {
   z-index: 2;
   position: relative;
   padding: 0% 5%;
-  width: 50%;
-  margin-left: auto;
-  right: 0px;
-  right: 0;
   font-size: 2.5vw;
   font-family: 'Menlo Regular', Helvetica, sans-serif;
   text-transform: uppercase; }
+  @media screen and (min-width: 901px) {
+    .text2 {
+      width: 50%;
+      margin-left: auto;
+      right: 0px;
+      right: 0; } }
+  @media (max-width: 900px) {
+    .text2 {
+      font-size: 6.5vw; } }
 
 .treesection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Menlo Regular', Helvetica, sans-serif; }
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.demarche {
+  width: 35%;
+  padding: 0% 5%; }
+  @media (max-width: 900px) {
+    .demarche {
+      min-width: 350px;
+      min-width: 21.875rem; } }
 
 .text3 {
   z-index: 2;
-  width: 40%;
-  padding: 40px 80px 40px 110px;
-  padding: 2.5rem 5rem 2.5rem 6.875rem;
-  font-size: 2rem;
-  text-align: justify;
-  font-family: 'Menlo Regular', Helvetica, sans-serif; }
+  padding: 5% 0%;
+  font-size: 1.5vw;
+  text-align: justify; }
+  @media (max-width: 900px) {
+    .text3 {
+      font-size: 4.5vw; } }
 
 .imagesectiontree {
   z-index: 3;
   width: 90%;
-  height: 300px;
-  height: 18.75rem;
+  height: 40%;
   border: solid red 5px;
   border: solid red 0.3125rem;
   margin: 20px auto;
@@ -272,13 +295,102 @@ body {
 
 .bloc7 {
   z-index: 3;
-  width: 60%;
-  height: 700px;
-  height: 43.75rem;
+  height: 300px;
+  height: 18.75rem;
   border: solid red 5px;
-  border: solid red 0.3125rem;
-  margin-top: -40px;
-  margin-top: -2.5rem; }
+  border: solid red 0.3125rem; }
+  @media screen and (min-width: 901px) {
+    .bloc7 {
+      width: 65%;
+      margin: 50px 10px;
+      margin: 3.125rem 0.625rem; } }
+  @media (max-width: 900px) {
+    .bloc7 {
+      min-width: 350px;
+      min-width: 21.875rem; } }
+
+.foursection {
+  overflow: hidden;
+  padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
+  padding-top: 15px;
+  padding-top: 0.9375rem;
+  font-family: Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-style: justify; }
+  .foursection .colonne1 {
+    width: 15%; }
+    @media (max-width: 900px) {
+      .foursection .colonne1 {
+        min-width: 355px;
+        min-width: 22.1875rem; } }
+  .foursection .colonne2 {
+    width: 25%; }
+    @media (max-width: 900px) {
+      .foursection .colonne2 {
+        min-width: 355px;
+        min-width: 22.1875rem; } }
+  .foursection .colonne3 {
+    width: 25%; }
+    @media (max-width: 900px) {
+      .foursection .colonne3 {
+        min-width: 355px;
+        min-width: 22.1875rem; } }
+  .foursection .colonne4 {
+    width: 35%; }
+    @media (max-width: 900px) {
+      .foursection .colonne4 {
+        min-width: 355px;
+        min-width: 22.1875rem; } }
+
+.bloc8 {
+  z-index: 1;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  width: 100%; }
+  @media screen and (min-width: 901px) {
+    .bloc8 {
+      margin-left: 25%;
+      width: 90%; } }
+
+.bloc9 {
+  z-index: 2;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg); }
+  @media screen and (min-width: 901px) {
+    .bloc9 {
+      margin-top: 30%;
+      width: 120%; } }
+
+.bloc10 {
+  z-index: 3;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg); }
+  @media screen and (min-width: 901px) {
+    .bloc10 {
+      margin-top: 5%;
+      width: 100%; } }
+
+.bloc11 {
+  z-index: 4;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg); }
+  @media screen and (min-width: 901px) {
+    .bloc11 {
+      width: 75%;
+      margin-top: 7%;
+      margin-left: -20%; } }
+
+.texte4 {
+  padding: 10% 10%; }
+  @media screen and (min-width: 901px) {
+    .texte4 {
+      width: 90%;
+      font-size: 2vw; } }
 
 footer {
   width: 100%;
