@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700,400);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,6 +45,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'Menlo Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/Menlo-Regular.woff") format("woff"); }
+
 .snakeSegment {
   background: url("../img/gifsnake.gif") no-repeat;
   position: absolute;
@@ -56,8 +61,6 @@ table {
   z-index: 1; }
 
 #snakeShadowDemo {
-  height: 4000px;
-  height: 250rem;
   position: static; }
 
 html {
@@ -66,9 +69,7 @@ html {
 
 body {
   margin: 0;
-  font-style: sans-serif;
-  background: url("../img/bg2.png") no-repeat;
-  background-size: 100vw; }
+  font-style: sans-serif; }
 
 .bloc {
   position: relative;
@@ -81,30 +82,28 @@ body {
 
 .firstsection {
   margin-top: 50px;
-  margin-top: 3.125rem; }
+  margin-top: 3.125rem;
+  font-family: 'Menlo Regular', Helvetica, sans-serif;
+  display: block; }
 
 .bloc1 {
-  z-index: 0;
+  z-index: 2;
   width: 65%;
-  height: 700px;
-  height: 43.75rem;
   right: 0%;
   margin-left: auto;
-  border: solid blue 5px;
-  border: solid blue 0.3125rem; }
+  background-position: 100%; }
 
 .bloc2 {
   z-index: 2;
   left: 0%;
   top: -320px;
   top: -20rem;
-  width: 40%;
-  height: 800px;
-  height: 50rem;
-  border: solid red 5px;
-  border: solid red 0.3125rem;
+  width: 39%;
   -webkit-transform: rotate(-4deg);
-          transform: rotate(-4deg); }
+          transform: rotate(-4deg);
+  overflow: hidden; }
+  .bloc2 img {
+    width: 100%; }
 
 .text1 {
   z-index: 2;
@@ -116,28 +115,26 @@ body {
   padding: 10px;
   padding: 0.625rem;
   width: 47%;
-  font-size: 2.4rem;
-  line-height: 1.1;
+  font-size: 2.2rem;
+  line-height: 1.5;
   padding-right: 90px;
   padding-right: 5.625rem;
-  text-align: justify; }
+  text-align: justify;
+  font-family: Helvetica, sans-serif; }
 
 .twosection {
-  margin-top: -860px;
-  margin-top: -53.75rem;
+  margin-top: 0px;
+  margin-top: 0;
   overflow: hidden;
-  height: 39%; }
+  font-family: 'Menlo Regular', Helvetica, sans-serif;
+  display: block; }
 
 .bloc3 {
   z-index: 3;
-  width: 20%;
-  height: 510px;
-  height: 31.875rem;
+  width: 21%;
   right: -35px;
   right: -2.1875rem;
   margin-left: auto;
-  border: solid green 5px;
-  border: solid green 0.3125rem;
   -webkit-transform: rotate(7deg);
           transform: rotate(7deg);
   overflow: hidden;
@@ -147,26 +144,18 @@ body {
 .bloc4 {
   z-index: 3;
   width: 25%;
-  height: 620px;
-  height: 38.75rem;
   right: 15%;
   margin-left: auto;
-  top: -190px;
-  top: -11.875rem;
-  border: solid blue 5px;
-  border: solid blue 0.3125rem;
+  margin-top: -190px;
+  margin-top: -11.875rem;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg); }
 
 .bloc5 {
   z-index: 2;
-  width: 25%;
-  height: 600px;
-  height: 37.5rem;
+  width: 27%;
   right: 38%;
   margin-left: auto;
-  border: solid red 5px;
-  border: solid red 0.3125rem;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
   top: -950px;
@@ -175,11 +164,7 @@ body {
 .bloc6 {
   z-index: 3;
   width: 30%;
-  height: 700px;
-  height: 43.75rem;
   left: 12%;
-  border: solid purple 5px;
-  border: solid purple 0.3125rem;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
   top: -1010px;
@@ -191,17 +176,20 @@ body {
   height: 850px;
   height: 53.125rem;
   left: 3%;
-  border: solid #ff6600 5px;
-  border: solid #ff6600 0.3125rem;
+  background-color: #FDFA05;
   -webkit-transform: rotate(7deg);
           transform: rotate(7deg);
-  top: -2460px;
-  top: -153.75rem; }
+  top: -2380px;
+  top: -148.75rem;
+  text-transform: uppercase; }
   .bloc6bg p {
-    margin: 20%;
-    font-size: 4.4rem;
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg); }
+    padding-left: 100px;
+    padding-left: 6.25rem;
+    padding-top: 160px;
+    padding-top: 10rem;
+    font-size: 5rem;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
 
 .text2 {
   z-index: 2;
@@ -213,12 +201,15 @@ body {
   padding: 10px;
   padding: 0.625rem;
   width: 45%;
-  font-size: 4.4rem; }
+  font-size: 4.4rem;
+  font-family: 'Menlo Regular', Helvetica, sans-serif;
+  text-transform: uppercase; }
 
 .treesection {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  font-family: 'Menlo Regular', Helvetica, sans-serif; }
 
 .text3 {
   z-index: 2;
@@ -226,7 +217,8 @@ body {
   padding: 40px 80px 40px 110px;
   padding: 2.5rem 5rem 2.5rem 6.875rem;
   font-size: 2rem;
-  text-align: justify; }
+  text-align: justify;
+  font-family: 'Menlo Regular', Helvetica, sans-serif; }
 
 .imagesectiontree {
   z-index: 3;
@@ -248,56 +240,31 @@ body {
   margin-top: -40px;
   margin-top: -2.5rem; }
 
-/********************* text shadow parallax *********************/
-html, body {
-  height: 100%;
-  padding: 0; }
+footer {
+  width: 100%;
+  height: 60vh; }
 
-html {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 62.5%; }
+#footer1 {
+  border: solid 3px red;
+  border: solid 0.1875rem red;
+  height: 60%;
+  width: 100%;
+  margin-bottom: -20px;
+  margin-bottom: -1.25rem; }
+  #footer1 img {
+    width: 50%;
+    margin: 0px 25%;
+    margin: 0 25%; }
 
-body {
-  background-color: #EEEEEF;
-  font-family: sans-serif, Montserrat, Helvetica, Times, serif;
-  font-size: 1rem;
-  line-height: 1.45;
-  text-rendering: optimizeLegibility;
-  -webkit-font-feature-settings: "liga", "kern"; }
+.gif {
+  background: url("../img/footer-anim-gif.gif") no-repeat center; }
 
-a {
-  color: #555;
-  text-decoration: none; }
+.transparent {
+  background-color: red; }
 
-p {
-  margin-bottom: 1.3em; }
-
-h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -.45rem; }
-
-h1 {
-  margin-top: 0;
-  font-size: 6.853em;
-  /* Hello stylesheet! */
-  width: 90vw; }
-
-.bold {
-  display: inline-block;
-  font-weight: normal;
-  color: blue;
-  will-change: transform; }
-
-.fit-top-right-bottom-left {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%); }
+section.footer2 {
+  background-color: #1D1D1B;
+  height: 40%; }
 
 /*
 section{
