@@ -425,8 +425,8 @@ footer {
   overflow: hidden; }
 
 #footer1 {
-  height: 200px;
-  height: 12.5rem;
+  height: 250px;
+  height: 15.625rem;
   width: 100%;
   z-index: 3;
   position: relative; }
@@ -444,8 +444,8 @@ footer {
 
 section.footer2 {
   background-color: #1D1D1B;
-  height: 200px;
-  height: 12.5rem;
+  height: 150px;
+  height: 9.375rem;
   z-index: 4;
   position: relative; }
 
