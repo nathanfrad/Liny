@@ -98,13 +98,13 @@ body {
 
    video {
     width: 90%;
-    margin: 20px 20px;
+    margin: 15px 5px;
    }
 
    @media #{$desktop} {
    margin-top: 40%;
    width: 120%;
-   height: 100%;
+   height: 95%;
    }
 
 
@@ -286,7 +286,7 @@ body {
 
 
   @media #{$mobile} {
-    min-width: 350px;
+    min-width: 310px;
    }
 
 }
@@ -321,7 +321,7 @@ body {
    }
 
     @media #{$mobile} {
-    min-width: 350px;
+    min-width: 300px;
    }
 
 }
@@ -454,21 +454,42 @@ body {
 
 
 footer {
-
   width: 100%;
-  height: 60vh;
+  height: 400px;
+  overflow: hidden;
+
 }
 
 #footer1{
  // border: solid 3px red;
-  height:60%;
-  width: 100%;
-  margin-bottom: -20px;
+height:200px;
+width: 100%;
+z-index: 3;
+position: relative;
+//margin-bottom: -20px;
+
     img {
-      width:50%;
-      margin: 0px 25%;
-    }
+      width: 100%;
+
+      position: absolute;
+      bottom: 0px;
+
+      @media #{$desktop} {
+       width:70%;
+       margin: 0px 15%;
+       margin-bottom:-1%;
+       }
+      }
 }
+
+section.footer2{
+  background-color: #1D1D1B;
+  height:200px;
+  z-index: 4;
+  position: relative;
+}
+
+
 .gif {
 background: url('../img/footer-anim-gif.gif') no-repeat center;
   }
@@ -477,8 +498,4 @@ background-color: red ;
 
 }
 
-section.footer2{
-  background-color: #1D1D1B;
-  height:40%;
-}
 

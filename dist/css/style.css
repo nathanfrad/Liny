@@ -116,13 +116,13 @@ body {
   overflow: hidden; }
   .bloc1 video {
     width: 90%;
-    margin: 20px 20px;
-    margin: 1.25rem 1.25rem; }
+    margin: 15px 5px;
+    margin: 0.9375rem 0.3125rem; }
   @media screen and (min-width: 901px) {
     .bloc1 {
       margin-top: 40%;
       width: 120%;
-      height: 100%; } }
+      height: 95%; } }
 
 .bloc2 {
   z-index: 2;
@@ -276,8 +276,8 @@ body {
       width: 35%; } }
   @media (max-width: 900px) {
     .demarche {
-      min-width: 350px;
-      min-width: 21.875rem; } }
+      min-width: 310px;
+      min-width: 19.375rem; } }
 
 .text3 {
   z-index: 2;
@@ -312,8 +312,8 @@ body {
       margin: 3.125rem auto; } }
   @media (max-width: 900px) {
     .bloc7 {
-      min-width: 350px;
-      min-width: 21.875rem; } }
+      min-width: 300px;
+      min-width: 18.75rem; } }
 
 .foursection {
   overflow: hidden;
@@ -420,24 +420,37 @@ body {
 
 footer {
   width: 100%;
-  height: 60vh; }
+  height: 400px;
+  height: 25rem;
+  overflow: hidden; }
 
 #footer1 {
-  height: 60%;
+  height: 200px;
+  height: 12.5rem;
   width: 100%;
-  margin-bottom: -20px;
-  margin-bottom: -1.25rem; }
+  z-index: 3;
+  position: relative; }
   #footer1 img {
-    width: 50%;
-    margin: 0px 25%;
-    margin: 0 25%; }
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    bottom: 0; }
+    @media screen and (min-width: 901px) {
+      #footer1 img {
+        width: 70%;
+        margin: 0px 15%;
+        margin: 0 15%;
+        margin-bottom: -1%; } }
+
+section.footer2 {
+  background-color: #1D1D1B;
+  height: 200px;
+  height: 12.5rem;
+  z-index: 4;
+  position: relative; }
 
 .gif {
   background: url("../img/footer-anim-gif.gif") no-repeat center; }
 
 .transparent {
   background-color: red; }
-
-section.footer2 {
-  background-color: #1D1D1B;
-  height: 40%; }

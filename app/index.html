@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8">
-            <title>
-                Document
-            </title>
-            <meta content="Nathan Fradet" name="author"/>
-            <link href="css/style.css" rel="stylesheet" type="text/css"/>
-            <script src="https://code.jquery.com/jquery-2.1.4.js">
-            </script>
-            <script src="css/script.js">
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.min.js" type="text/javascript">
-            </script>
-        </meta>
+        <title>
+            Document
+        </title>
+        <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+        <meta content="Nathan Fradet" name="author"/>
+        <meta charset="utf-8"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-2.1.4.js">
+        </script>
+        <script src="css/script.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.min.js" type="text/javascript">
+        </script>
         <script language="javascript" type="text/javascript">
             $(function () {
              var $window = $(window);
 
              $window.scroll(function () {
-                 if ($window.height() + $window.scrollTop() < $(document).height()) {
-                 // alert($(document).height())
+                 if ($window.height() + $window.scrollTop() < $(document).height()-1000) {
 
+                //   var baliseimg = document.getElementById("imag");
+                // baliseimg.parentNode.removeChild(baliseimg);
 
-              // document.getElementById("footer1").classList.add("transparent");
-               // document.getElementById("footer1").classList.remove("gif");
-                //document.getElementById("footer1").innerHTML = "";
+                 var element = document.getElementById("footer1");
+                while (element.firstChild) {
+                 element.removeChild(element.firstChild);
+                  }
+
+                 //alert($(document).height());
+                 //  document.getElementById("footer1").classList.add("transparent");
+                  //document.getElementById("footer1").classList.remove("gif");
+                  //document.getElementById("footer1").innerHTML = "";
+                  //document.getElementById("footer1").innerHTML = "<img src=\"img/footer-anim-gif.gif\"/>";
                  }
-                 else if ($window.height() + $window.scrollTop() === $(document).height())-3000 {
+                else if ($window.height() + $window.scrollTop() > $(document).height()-3){
 
-                   alert($(document).height())
-
-               // document.getElementById("footer1").classList.remove("transparent");
-               // document.getElementById("footer1").classList.add("gif");
-              //document.getElementById("footer1").innerHTML = "<img src=\"img/footer-anim-gif.gif\"/>";
-                 }
+                 //  alert($(document).height());
+                 // document.getElementById("footer1").classList.remove("transparent");
+                 // document.getElementById("footer1").classList.add("gif");
+                // document.getElementById("footer1").innerHTML = "<img id=\"imag\" src=\"img/footer-anim-gif.gif\"/>";
+                 var img=document.createElement("img");
+                 img.src="img/footer-anim-gif.gif"
+                 img.id="baliseimg"
+                 var foo = document.getElementById("footer1");
+                 foo.appendChild(img);
+                }
              });
          });
         </script>
@@ -110,7 +122,7 @@
                 </div>
             </div>
             <div class=" bloc7 shadow">
-                bloc 3
+                bloc 7
             </div>
         </section>
         <section class="foursection">
