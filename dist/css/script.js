@@ -1,5 +1,4 @@
 //****************************** snake ***************************//
-
 //rotation
 function rotate(element, radians) {
     radians += Math.PI / 2;
@@ -25,8 +24,7 @@ function initSnakes(container, numSnakes) {
             y: height / 50,
             mouse: true
         };
-
-//position
+    //position
     function positionSnake(snake) {
         $(snake.element).css({
             left: snake.x - snakeWidth / 2,
@@ -40,14 +38,12 @@ function initSnakes(container, numSnakes) {
             x: width * 4 / 5,
             y: height * 4 / 5,
             angle: Math.PI * 2 / 10, //add  angle: Math.PI * 2
-
             element: $.parseHTML('<div class="snakeSegment"></div>')
         };
         $(snake.element);
         container.append(snake.element); // ajoute un snake
         positionSnake(snake);
         follow(snake, mouse);
-
     }
 
     function follow(snake, leader) {
@@ -57,7 +53,6 @@ function initSnakes(container, numSnakes) {
                 dd = Math.hypot(dx, dy), // renvoie la racine carrée de la somme des carrés de ses arguments
                 angle = snake.angle = Math.atan2(dy, dx), //  renvoie l'arc tangente du quotient de ses arguments.
                 direction = (dd < snakeRadius ? -1 : 1);
-
             /* // si il y a plusieurs serpents, cela créer le décalage
             if (dd > maxDistance && !leader.mouse) {
                 snake.x += Math.cos(angle) * (dd - maxDistance);
@@ -76,7 +71,7 @@ function initSnakes(container, numSnakes) {
         update();
         snake.moveInterval = window.setInterval(update, 1500 / freqImages); // vitesse de poursuite
     }
-// mettre a jour la position de la souri
+    // mettre a jour la position de la souri
     function mouseUpdate(event) {
         event = event || window.event;
         mouse.x = event.pageX - left;
@@ -84,7 +79,6 @@ function initSnakes(container, numSnakes) {
     }
     container.mousemove(mouseUpdate);
 }
-
 //lancement de l'anim
 function launch() {
     initSnakes($('#snakeShadowDemo'), 1);
@@ -94,5 +88,42 @@ $(window).resize(function() {
     $('.snakeSegment').remove();
     launch();
 });
+//****************************** footer ***************************//
+$(function() {
+    var $window = $(window);
+    $window.scroll(function() {
+        if ($window.height() + $window.scrollTop() < $(document).height() - 1000) {
+            //   var baliseimg = document.getElementById("imag");
+            // baliseimg.parentNode.removeChild(baliseimg);
+            var element = document.getElementById("footer1");
+            while (element.firstChild) {
+                element.removeChild(element.firstChild);
+            }
+            //alert($(document).height());
+            //  document.getElementById("footer1").classList.add("transparent");
+            //document.getElementById("footer1").classList.remove("gif");
+            //document.getElementById("footer1").innerHTML = "";
+            //document.getElementById("footer1").innerHTML = "<img src=\"img/footer-anim-gif.gif\"/>";
+        } else if ($window.height() + $window.scrollTop() == $(document).height()) {
+            var element = document.getElementById("footer1");
+            if (element.hasChildNodes()){
 
+            } else {
+              var img = document.createElement("img");
+                img.src = "img/footer-anim-gif.gif"
+                img.id = "baliseimg"
+                img.alt = "footer"
+                var foo = document.getElementById("footer1");
+                foo.appendChild(img);
 
+            }
+            //alert true
+            //  alert($(document).height());
+            // document.getElementById("footer1").classList.remove("transparent");
+            // document.getElementById("footer1").classList.add("gif");
+            // document.getElementById("footer1").innerHTML = "<img id=\"imag\" src=\"img/footer-anim-gif.gif\"/>";
+            var objet = document.getElementsById("footer1");
+            alert(objet.hasChildNodes());
+        }
+    });
+});
