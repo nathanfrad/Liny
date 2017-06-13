@@ -2,3 +2,5 @@
 /dist
 *log
 dist/css/style.css
+*.css
+dist/css/style.css
