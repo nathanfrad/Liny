@@ -92,7 +92,7 @@ $(window).resize(function() {
 $(function() {
     var $window = $(window);
     $window.scroll(function() {
-        if ($window.height() + $window.scrollTop() < $(document).height() - 1000) {
+        if ($window.height() + $window.scrollTop() < $(document).height() - 400) {
             //   var baliseimg = document.getElementById("imag");
             // baliseimg.parentNode.removeChild(baliseimg);
             var element = document.getElementById("footer1");
@@ -104,7 +104,7 @@ $(function() {
             //document.getElementById("footer1").classList.remove("gif");
             //document.getElementById("footer1").innerHTML = "";
             //document.getElementById("footer1").innerHTML = "<img src=\"img/footer-anim-gif.gif\"/>";
-        } else if ($window.height() + $window.scrollTop() == $(document).height()) {
+        } else if ($window.height() + $window.scrollTop() > $(document).height()-500) {
             var element = document.getElementById("footer1");
             if (element.hasChildNodes()){
 
